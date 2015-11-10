@@ -3,7 +3,7 @@ class CreatePonies < ActiveRecord::Migration
     create_table :ponies do |t|
       t.string :name
       t.string :cutie_mark
-      t.string :type
+      t.string :kind
       t.string :address
       t.string :occupation
       t.string :picture

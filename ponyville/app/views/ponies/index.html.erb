@@ -1,0 +1,7 @@
+<h2>The Ponies of Ponyville</h2>
+
+<div>
+  <% @ponies.each do |pony| %>
+    <%= link_to pony.name, pony %>
+  <% end %>
+</div>

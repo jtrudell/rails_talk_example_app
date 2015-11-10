@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20151110025616) do
   create_table "ponies", force: :cascade do |t|
     t.string   "name"
     t.string   "cutie_mark"
-    t.string   "type"
+    t.string   "kind"
     t.string   "address"
     t.string   "occupation"
     t.string   "picture"
