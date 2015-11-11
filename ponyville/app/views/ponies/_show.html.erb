@@ -1,0 +1,15 @@
+
+<!-- <% if pony.picture %>
+  <%= image_tag(pony.picture)  %>
+<% end %> -->
+
+
+<div> <%= image_tag(pony_picture(pony)) %>
+<div>
+  <ul>
+    <li>Type: <%= pony.kind %></li>
+    <li>Cutie Mark: <%= pony.cutie_mark %></li>
+    <li>Residence: <%= pony.address %></li>
+    <li>Occupation: <%= pony.kind %></li>
+  <ul>
+<div>

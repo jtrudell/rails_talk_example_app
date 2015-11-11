@@ -3,7 +3,10 @@
 <div>
   <ul>
   <% @ponies.each do |pony| %>
-    <li><%= link_to pony.name, pony %></li>
+    <li class= "<%=pony.name%>"><%= link_to pony.name, pony %></li>
+    <div>
+      <%= render 'show', pony: pony %>
+    </div>
   <% end %>
 </ul>
 </div>
