@@ -1,4 +1,6 @@
-<h2>The Ponies of Ponyville</h2>
+<h2 id = "title">The Ponies of Ponyville</h2>
+
+<div class = "add"><%= link_to 'Add a Pony', new_pony_path %></div>
 
 <div>
   <% @ponies.each do |pony| %>
@@ -10,5 +12,3 @@
     </div>
   <% end %>
 </div>
-
-<%= link_to 'Add a Pony', new_pony_path %>

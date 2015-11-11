@@ -1,1 +1,21 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
 
+#title {
+  text-align: center;
+  color: purple;
+  font-family: serif;
+}
+
+.add {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+li {
+list-style-type: none;
+}
