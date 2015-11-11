@@ -17,8 +17,9 @@ class PoniesController < ApplicationController
 
   def create
     @pony = Pony.new(pony_params)
+    @pony.picture = "#{@pony.name.downcase.gsub(' ', '_')}.png"
     if @pony.save
-     redirect_to "index"
+     render :show
     else
      render :new
    end

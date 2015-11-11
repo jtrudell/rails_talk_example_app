@@ -1,0 +1,46 @@
+
+<%= form_for(@pony) do |f| %>
+  <% if @pony.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pony.errors.count, "error") %> prohibited this pony from being saved: </h2>
+
+      <ul>
+        <% @pony.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class = "field">
+    <%= form_for @pony, method: :post do |f| %>
+      <div>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+      <div>
+        <%= f.label :cutie_mark %>
+        <%= f.text_field :cutie_mark %>
+      </div>
+
+      <div>
+        <%= f.label :kind %>
+        <%= f.text_field :kind %>
+      </div>
+
+      <div>
+        <%= f.label :address %>
+        <%= f.text_field :address %>
+      </div>
+
+      <div>
+        <%= f.label :occupation %>
+        <%= f.text_field :occupation %>
+      </div>
+
+      <div>
+        <%= f.submit %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
