@@ -1,14 +1,14 @@
 <h2>The Ponies of Ponyville</h2>
 
 <div>
-  <ul>
   <% @ponies.each do |pony| %>
-    <li class= "<%=pony.name%>"><%= link_to pony.name, pony %></li>
     <div>
-      <%= render 'show', pony: pony %>
+      <li class= "pony_link"><%= link_to pony.name, pony %></li>
+      <div class="pony_show>">
+        <p><%= render 'show', pony: pony %></p>
+      </div>
     </div>
   <% end %>
-</ul>
 </div>
 
 <%= link_to 'Add a Pony', new_pony_path %>
