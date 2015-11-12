@@ -3,13 +3,15 @@
   <%= image_tag(pony.picture)  %>
 <% end %> -->
 
+<div class = "pony-info">
 
-<div> <%= image_tag(pony_picture(pony)) %>
+<%= image_tag(pony_picture(pony)) %>
 <div>
   <ul>
     <li>Type: <%= pony.kind %></li>
     <li>Cutie Mark: <%= pony.cutie_mark %></li>
     <li>Residence: <%= pony.address %></li>
-    <li>Occupation: <%= pony.kind %></li>
-  <ul>
-<div>
+    <li>Occupation: <%= pony.occupation %></li>
+  </ul>
+</div>
+</div>

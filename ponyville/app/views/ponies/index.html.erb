@@ -2,7 +2,7 @@
 
 <div class = "add"><%= link_to 'Add a Pony', new_pony_path %></div>
 
-<div>
+<div class = "pony-info">
   <% @ponies.each do |pony| %>
     <div>
       <li class= "pony_link"><%= link_to pony.name, pony %></li>

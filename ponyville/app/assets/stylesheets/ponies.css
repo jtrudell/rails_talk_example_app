@@ -2,6 +2,7 @@ body {
   width: 80%;
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 #title {
@@ -16,6 +17,41 @@ body {
   font-weight: bold;
 }
 
+ul {
+  padding-left: 5px;
+}
+
 li {
-list-style-type: none;
+  list-style-type: none;
+  padding-top: 5px;
+  font-size: 1.25em;
+}
+
+.home {
+  padding-top: 5px;
+  margin-left: 0;
+}
+
+.pony-info {
+  margin: 2em;
+  border-bottom: 2px solid pink;
+}
+
+.field div {
+  padding-top: 5px;
+}
+
+.pony_link {
+  margin-left: 2em;
+  font-size: 1.25em;
+}
+
+.pony_link a {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}
+
+.pony_link a:hover {
+  color: purple;
 }
