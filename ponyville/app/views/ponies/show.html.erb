@@ -5,13 +5,14 @@
 <% end %> -->
 
 
+<div class = "pony-info">
 <div> <%= image_tag(pony_picture(@pony)) %>
-<div>
   <ul>
     <li>Type: <%= @pony.kind %></li>
     <li>Cutie Mark: <%= @pony.cutie_mark %></li>
     <li>Residence: <%= @pony.address %></li>
-    <li>Occupation: <%= @pony.kind %></li>
-  <ul>
-    <%= link_to "Home", root_path %>
-<div>
+    <li>Occupation: <%= @pony.occupation %></li>
+  </ul>
+    <p class = "home"><%= link_to "Home", root_path %></p>
+</div>
+</div>
